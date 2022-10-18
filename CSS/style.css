@@ -1,0 +1,98 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body {
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #0084fd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* DEBUG */
+    width: 15%;
+    height: 50px;
+    background-color: #fff;
+}
+
+nav {
+    /* DEBUG */
+    width: 50%;
+    height: 50px;
+    background-color: #fff;
+}
+
+/* REGOLE Main */
+
+
+.cards {
+    margin-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    /* DEBUG */
+    width: 100%;
+    min-height: 400px;
+}
+
+    .card {
+        width: calc((100% / 3) - 10px);
+        background-color:#b5ddff;
+        border-radius:5%;
+        /* DEBUG */
+        height: 200px;
+    }
+    
+    .card.big {
+        width: calc(((100% / 3)* 2) - 10px );
+        border-radius: 10px;
+    }
+
+.col {
+    background-color: #9792e4;
+    display: flex;
+    /* DEBUG */
+    height: 400px;
+    width: 100%;
+    margin: 50px auto;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+    .column {
+        /* debug */
+        border: 1px dashed #000;
+        width: 50%;
+        height: 100%;
+    }
+
+    .column.white {
+        background-color: #fff;
+        width: 50%;
+        height: 60%;
+        border-radius: 10px;
+        margin-top: 20%;
+    }
